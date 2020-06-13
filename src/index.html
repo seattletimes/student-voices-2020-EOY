@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <%= t.include("partials/_head.html", grunt.data.json) %>
+    <% if (json.project.production && !json.project.embedded) { %>
+      <%= t.include("partials/_dataLayer.html") %>
+      <%= t.include("partials/_gtm.html") %>
+    <% } %>
+    <script src="https://use.fontawesome.com/5ea50bc62c.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <% if (json.project.production && !json.project.embedded) { %>
+      <%= t.include("partials/_gtmNoScript.html") %>
+    <% } %>
+    <responsive-child>
+      <!-- content goes here -->
+      <div class="container">
+
+      <div class="box">
+        <div class="pic" style="background-image: url('assets/heads/SMITH.jpg');" >
+          <div class="overlay" style="background-color: #3e807b;" data-number="6">
+            <p>"This whole pandemic has really changed my view on life, and it has shown me how fortunate I am."<span> - Peyton</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="pic" style="background-image: url('assets/heads/GOITIA.jpg');" >
+          <div class="overlay" style="background-color: #de9da2;" data-number="9">
+            <p>"I realized that although I couldn’t change my situation, I could find opportunities to share my experiences and listen to others."<span> - Sydney</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="pic" style="background-image: url('assets/heads/SAKAMOTO.jpg');">
+          <div class="overlay" style="background-color: #5885b1;" data-number="5">
+            <p>"I have learned the importance of community and adaptation to unexpected possibilities."<span> - Ciena</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="pic" style="background-image: url('assets/heads/LEE.jpg');">
+          <div class="overlay" style="background-color: #d8630c;" data-number="7">
+            <p>"I’ve learned what my body needs to cope."<span> - Ruby</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="pic" style="background-image: url('assets/heads/JOSEPH.jpg');">
+          <div class="overlay" style="background-color: #819c01;" data-number="4">
+            <p>"One thing I can take from online schooling is finding how to balance my time better."<span> - TJ</span></p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <!-- END OF BOXES
+      BEGINNING OF STORIES -->
+      <div class="story" data-number="6" style="border-top: 15px solid #3e807b;">
+        <i class="fa fa-times-circle" aria-hidden="true" style="color: #3e807b;"></i>
+        <div class="pic2" style="background-image: url('assets/heads/SMITH.jpg');" ></div>
+        <div class="hed">A new way of living and learning</div>
+        <div class="stats">Peyton Smith, 15, is a freshman at Lindbergh High.</div>
+
+        <p class="first">This whole pandemic has really changed my view on life, and it has shown me how fortunate I am. My mom has been working this whole time because
+          her company is considered an essential business. Although my dad had a few weeks off from work, he went back quickly. We’ve had access to the internet,
+          and our fridge and pantry have been able to stay fully stocked.</p>
+
+        <p>I was very shocked when I heard that we were going on a six-week “break” from school. I knew that COVID-19 was serious, but
+          I didn’t realize how much more serious it was going to get. Doing school work was soon required for a grade, and I was starting
+          to feel stressed and frustrated. I really missed the social part of school, and I wasn’t able to connect with people face to face anymore.
+          I had to essentially create a new routine for myself.</p>
+
+        <p>With the school year coming to an end, I have learned to adapt to a new way of living and learning, and I will bring
+          this experience of changing the way I lived during a global pandemic with me for the rest of my life.</p>
+
+      </div>
+
+      <div class="story" style="border-top: 15px solid #de9da2;" data-number="9">
+        <i class="fa fa-times-circle" style="color: #de9da2;" aria-hidden="true"></i>
+        <div class="pic2" style="background-image: url('assets/heads/GOITIA.jpg');" ></div>
+        <div class="hed">Finding opportunities to share and listen</div>
+        <div class="stats">Sydney Goitia, 14, is a freshman at University Prep.</div>
+
+        <p class="first">For a while I was lost about what my relationship to the pandemic was. I educated myself and took the necessary health precautions, but it took
+          awhile for me to connect with the severity of the situation. I had anxiety about myself and the people around me becoming infected, but something about it didn’t
+          feel real. It was hard for me to conceive that people all over the world had their focus on one thing: the coronavirus.</p>
+
+        <p>But eventually, it started to get to me. I started to miss the things I had taken for granted in my everyday life, like
+          spending time with my friends and my commute across town to school. Missing these activities made it seem more real.</p>
+
+        <p>I realized that although I couldn’t change my situation, I could find opportunities to share my experiences and listen to others. Some projects I
+          joined seek to help others find connection in this time of social distancing by sharing our stories through social media and film. Others involve
+          educating and discussing the injustices some people face in our world.</p>
+
+        <p>If there’s anything I’ve learned from this pandemic, it’s to use your situation to your advantage and inspire others to do the same.</p>
+
+      </div>
+
+
+
+
+
+      <div class="story" style="border-top: 15px solid #5885b1;" data-number="5">
+        <i class="fa fa-times-circle" style="color: #5885b1;"aria-hidden="true"></i>
+        <div class="pic2" style="background-image: url('assets/heads/SAKAMOTO.jpg');"></div>
+        <div class="hed">A different kind of 16th birthday</div>
+        <div class="stats">Ciena Sakamoto, 16, is a sophomore at Liberty High School.</div>
+
+        <p class="first">This pandemic has changed everything for me. My 16th birthday was three days after the closure of school, and although
+          seemingly unimportant, I never got the opportunity to drive myself to school. It’s the little milestones like first drives and birthdays
+          that we are all missing out on. I miss my friends and being able to go out like a teenager.</p>
+
+        <p>Virtual school is not a perfect replacement and looking at a computer all day gets tough at times. I know that eventually there
+          will be a day where we go back to school and live our normal lives again, but right now that seems pretty far away.</p>
+
+        <p>For me, there has been a bright side to all of this. I have been able to focus on my community work and get an internship with King County
+          SOAR to collaborate with an amazing group of youth. This break from my busy school and social life has reminded me to slow down and check in
+          with myself, something I rarely had time for. But most important, I have learned the importance of community and adaptation to unexpected
+          possibilities. Going into the future, I know that life has challenges but if I look in the right places, opportunities will always arise.</p>
+
+      </div>
+
+
+
+
+
+
+      <div class="story" data-number="7" style="border-top: 15px solid #d8630c;">
+        <i class="fa fa-times-circle" style="color: #d8630c;" aria-hidden="true"></i>
+        <div class="pic2" style="background-image: url('assets/heads/LEE.jpg');"></div>
+        <div class="hed">Forming habits, pulling myself through</div>
+        <div class="stats">Ruby Lee, 15, is a freshman at Rainier Beach High School.</div>
+
+        <p class="first">Freshman year was supposed to be the time I got comfortable and established a relationship with the school by getting to know
+          teachers and classmates. A time to find my place there. But as of March, I was stuck at home, the days just rolling by.</p>
+
+        <p>At first, I treated it all like a long break. I slacked on homework, stayed up late and procrastinated. I didn’t really realize how big of an
+          effect this was having on my mental health. My whole world was flipped. I was more emotional, I would get stressed easier, even just tired more often.</p>
+
+        <p>Eventually, I accepted what was happening, forgot about all the thoughts and feelings about why it sucked, and took action.
+          Making tea, settling into my desk seat and starting work became my daily habit. This was helpful because it told my body, “OK now we’re in work mode”
+          and it set the tone for the entire day.</p>
+
+        <p>Of course I still sometimes get emotional or sad, but I’ve learned what my body needs to cope. Maybe I need to get out of the house, or maybe
+          I need to talk to someone I love. I’m grateful for what this quarantine has shown me about myself and the tiny details that make life worth living.</p>
+
+      </div>
+
+
+
+
+      <div class="story" data-number="4" style="border-top: 15px solid #819c01;">
+        <i class="fa fa-times-circle" style="color: #819c01;" aria-hidden="true"></i>
+        <div class="pic2" style="background-image: url('assets/heads/JOSEPH.jpg');"></div>
+        <div class="hed">Making lunch</div>
+        <div class="stats">TJ Joseph, 16, is a junior at Garfield High School.</div>
+
+        <p class="first">School has been significantly easier for me since the pandemic started. I have a lot less homework, and my time is
+          much easier to manage. I am learning things at a much slower rate, which feels right for adjusting to online school. My teachers
+          are very understanding and flexible with work.</p>
+
+        <p>I now have time to do things that I couldn’t do during the school year, like sleeping in, making lunch for myself and spending more time with my family.</p>
+
+        <p>During the school year, I’d only be around my family for about an hour each day due to our schedules, but now I get to see them
+          throughout the day. It’s been better for my individual relationships, especially with my dad who I saw the least when he had work.</p>
+
+        <p>I have enjoyed online school, but I will not be sad when it comes to an end. It is a good temporary fix,
+          but seeing my friends and interacting with my teachers in person allows me to learn better and be a better student.</p>
+
+        <p>One thing I can take from online schooling is finding how to balance my time better. After high school, I won’t have to sit in school for seven hours
+          every day, and being in quarantine has allowed me to create a schedule that I can use in the future to be the most productive version of myself.</p>
+
+      </div>
+
+
+
+
+
+    </div> <!-- end container -->
+
+    </responsive-child>
+
+    <script src="app.js" async></script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>

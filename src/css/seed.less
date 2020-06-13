@@ -1,0 +1,193 @@
+@import "seattletimes";
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  text-align: center;
+  // padding-bottom: 50vh;
+  //
+  // @media @desktop-up {
+  //   padding-bottom: 35vh;
+  // }
+}
+
+.spacer {
+  width: 100%;
+  height: 100vh;
+}
+
+.box {
+
+  display: inline-block;
+  position: relative;
+  width: 49%;
+  transition: .3s ease;
+  padding: 0;
+  margin: -2px -1px;
+
+
+  @media @desktop-up {
+    max-width: 275px;
+    padding: 2px 4px;
+    margin: 0;
+  }
+
+  .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .7s ease;
+  background-color: #008CBA;
+
+  p {
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0;
+    width: 95%;
+    font-family: 'Quicksand', sans-serif;
+
+    @media @desktop-up {
+      font-size: 17px;
+      width: 75%;
+    }
+
+    span {
+      display: block;
+      margin-top: 0.4em;
+    }
+  }
+}
+
+
+
+
+}
+
+.box:hover .overlay {
+  opacity: 1 !important;
+}
+
+.box:hover {
+  cursor: pointer;
+  transform: scale(1.05,1.05);
+}
+
+.toggled {
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 0;
+    border-width: 0 1px;
+}
+
+// .box:hover .overlay {
+//   opacity: 1;
+// }
+
+.story {
+  display: none;
+  margin: 1em 1%;
+  // background-color: #ddd;
+  padding: 1em;
+  // border-top: 1px solid #bbb;
+  text-align: left;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  z-index: 10;
+  width: 90%;
+
+  background-color: white;
+
+  @media @desktop-up {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  i {
+    float: right;
+    font-size: 2em;
+    opacity: 0.6;
+  }
+
+  i:hover {
+    cursor: pointer;
+    transform: scale(1.05,1.05);
+    opacity: 1;
+  }
+
+  .first {
+    clear:both;
+  }
+
+
+
+  .hed {
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1.1em;
+    margin-bottom: 0.5em;
+  }
+
+  .stats {
+    font-style: italic;
+  }
+
+}
+
+.pic {
+  width: 100%;
+  position: relative;
+  // height: ~"calc(100% - 200px)";
+  // height: ~"-moz-calc(100% - 200px)";
+  // height: ~"-webkit-calc(100% - 200px)";
+  background-position: center;
+
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media @desktop-up {
+    height: 260px;
+  }
+}
+
+.pic2 {
+  width: 150px;
+  position: relative;
+  // height: ~"calc(100% - 200px)";
+  // height: ~"-moz-calc(100% - 200px)";
+  // height: ~"-webkit-calc(100% - 200px)";
+  background-position: center;
+
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: none;
+  margin: auto;
+  margin-bottom: 0.7em;
+
+
+  @media @desktop-up {
+    width: 120px;
+    height: 120px;
+    margin-right: 15px;
+    float: left;
+
+  }
+}
